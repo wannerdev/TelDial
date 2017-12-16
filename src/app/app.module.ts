@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { OperatorComponent } from './components/operator/operator.component';
+import { DialComponent } from './components/dial/dial.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OperatorComponent,
+    DialComponent
   ],
   imports: [
     BrowserModule

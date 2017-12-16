@@ -1,0 +1,15 @@
+<div id="textblock">
+  <p>
+    Simply enter the cellphone number you want to call and we will connect you with the cheapest operator.
+  </p>
+</div>
+<div id="InputField">
+  <input id="cell" type="number" class="form-control" (keyup)="validateNumber($event)" placeholder="Cellphone number to call"
+    size="20px">
+  <div *ngIf="showWarn" class="warningText">
+    {{validHint}}
+  </div>
+  <button class="btn btn-success" (click)="onClick()" [disabled]="disableBtn">Dial</button>
+
+</div>
+<div *ngIf="showPrice">You are calling with {{cheapestOp.name}}. Dialing for {{cheapestOp.pplist[0].price}}$ per minute.</div>

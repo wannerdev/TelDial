@@ -1,0 +1,37 @@
+/*
+ Disables Hover "spinner-buttons" on Input field
+ */
+input[type=number] {
+    -moz-appearance:textfield;
+    text-align:center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+.warningText{
+    color: red;
+}
+#cell{
+    margin-bottom: 10px;    
+}
+button{
+    margin-bottom: 10px;
+}
+.btn-success{
+    background-color: #004797;
+    border-color: #202f20;     
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #056ddd;
+    border-color: #202f20;
+}
+p{
+    font-size: 18px;
+}

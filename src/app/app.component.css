@@ -1,0 +1,17 @@
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Lora', serif;
+    font-size: 250%;
+    margin-bottom: 2%;
+    margin-top: 3%;
+  }
+  .img-circle {
+    border-radius: 50%;
+    margin-bottom: 3%;
+}
+  
+  
+.phone{
+  background-image: url('/assets/phone_black.jpg');
+}

@@ -1,0 +1,24 @@
+<app-dial [operators]="operators"></app-dial>
+<br>
+<button class="btn btn-success" (click)="onClick()">Show Operators</button>
+<div *ngIf="showOp">
+  <br>
+  <hr>
+  <h2>Available Operators</h2>
+  <div *ngFor="let operator of operators" class="operators">
+    <br>
+    <h3>{{operator.name}}</h3>
+    <table>
+      <tbody>
+        <tr>
+          <th>Prefix</th>
+          <th>Price $ per minute </th>
+        </tr>
+        <tr *ngFor="let ppair of operator.pplist">
+          <td>{{ppair.prefix}}</td>
+          <td>${{ppair.price}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
